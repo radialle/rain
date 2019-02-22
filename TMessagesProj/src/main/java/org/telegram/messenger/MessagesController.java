@@ -26,6 +26,7 @@ import android.widget.Toast;
 import org.telegram.SQLite.SQLiteCursor;
 import org.telegram.messenger.support.SparseLongArray;
 import org.telegram.messenger.voip.VoIPService;
+import org.telegram.rain.RainPreferences;
 import org.telegram.tgnet.ConnectionsManager;
 import org.telegram.tgnet.NativeByteBuffer;
 import org.telegram.tgnet.RequestDelegate;
@@ -260,6 +261,8 @@ public class MessagesController implements NotificationCenter.NotificationCenter
     public static final int UPDATE_MASK_MESSAGE_TEXT = 32768;
     public static final int UPDATE_MASK_ALL = UPDATE_MASK_AVATAR | UPDATE_MASK_STATUS | UPDATE_MASK_NAME | UPDATE_MASK_CHAT_AVATAR | UPDATE_MASK_CHAT_NAME | UPDATE_MASK_CHAT_MEMBERS | UPDATE_MASK_USER_PRINT | UPDATE_MASK_USER_PHONE | UPDATE_MASK_READ_DIALOG_MESSAGE | UPDATE_MASK_PHONE;
 
+    private RainPreferences rainPreferences;
+
     private class ReadTask {
         public long dialogId;
         public int maxId;
@@ -367,6 +370,8 @@ public class MessagesController implements NotificationCenter.NotificationCenter
         ImageLoader.getInstance();
         MessagesStorage.getInstance(currentAccount);
         LocationController.getInstance(currentAccount);
+        rainPreferences = new RainPreferences(ApplicationLoader.applicationContext);
+
         AndroidUtilities.runOnUIThread(() -> {
             MessagesController messagesController = getInstance(currentAccount);
             NotificationCenter.getInstance(currentAccount).addObserver(messagesController, NotificationCenter.FileDidUpload);
@@ -3366,7 +3371,7 @@ public class MessagesController implements NotificationCenter.NotificationCenter
     }
 
     public void sendTyping(final long dialog_id, final int action, int classGuid) {
-        if (dialog_id == 0) {
+        if (dialog_id == 0 || !rainPreferences.getEnableTypingUpdates()) {
             return;
         }
         LongSparseArray<Boolean> typings = sendingTypings.get(action);

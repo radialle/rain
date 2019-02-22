@@ -2491,4 +2491,6 @@
     <string name="formatterDay12H">h:mm a</string>
     <string name="formatDateAtTime">%1$s at %2$s</string>
     <string name="formatDateScheduleDay">EEE MMM d</string>
+    <string name="RainSettings" translatable="false">Rain Experiments</string>
+    <string name="SendTypingUpdates" translatable="false">Send typing updates</string>
 </resources>
