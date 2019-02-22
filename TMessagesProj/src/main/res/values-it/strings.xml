@@ -1258,7 +1258,6 @@
     <string name="Emoji">Emoji</string>
     <string name="EmojiBigSize">Disegna una singola emoji grande</string>
     <string name="EmojiUseDefault">Usa emoji predefinite</string>
-    <string name="TelegramVersion">Telegram per Android %1$s</string>
     <string name="DebugMenu">Menù debug</string>
     <string name="DebugSendLogs">Invia i log</string>
     <string name="DebugClearLogs">Pulisci i log</string>

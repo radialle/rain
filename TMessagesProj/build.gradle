@@ -111,7 +111,7 @@ android {
         }
     }
 
-    defaultConfig.versionCode = 1497
+    defaultConfig.versionCode = 1000
 
     sourceSets.debug {
         manifest.srcFile 'config/debug/AndroidManifest.xml'
@@ -252,7 +252,7 @@ android {
     defaultConfig {
         minSdkVersion 16
         targetSdkVersion 27
-        versionName "5.3.1"
+        versionName "1.0.0"
 
 		vectorDrawables.generatedDensities = ['mdpi', 'hdpi', 'xhdpi', 'xxhdpi']
 

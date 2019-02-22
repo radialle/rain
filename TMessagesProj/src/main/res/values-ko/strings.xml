@@ -1258,7 +1258,6 @@
     <string name="Emoji">이모지</string>
     <string name="EmojiBigSize">큰 이모지 하나 그리기</string>
     <string name="EmojiUseDefault">시스템 기본 이모지 사용</string>
-    <string name="TelegramVersion">Android용 텔레그램 %1$s</string>
     <string name="DebugMenu">디버그 메뉴</string>
     <string name="DebugSendLogs">로그 보내기</string>
     <string name="DebugClearLogs">로그 초기화</string>
