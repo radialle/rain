@@ -1209,7 +1209,7 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
                     } else if (position == chatRow) {
                         textCell.setTextAndIcon(LocaleController.getString("ChatSettings", R.string.ChatSettings), R.drawable.menu_chats, true);
                     } else if (position == rainRow) {
-                        textCell.setTextAndIcon(LocaleController.getString("RainSettings", R.string.RainSettings), R.drawable.menu_settings, true);
+                        textCell.setTextAndIcon(LocaleController.getString("RainSettings", R.string.RainSettings), R.drawable.menu_rain, true);
                     } else if (position == helpRow) {
                         textCell.setTextAndIcon(LocaleController.getString("SettingsHelp", R.string.SettingsHelp), R.drawable.menu_help, false);
                     }
