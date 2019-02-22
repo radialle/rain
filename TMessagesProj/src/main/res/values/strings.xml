@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="AppName">Telegram</string>
-    <string name="AppNameBeta">Telegram Beta</string>
+    <string name="AppName" translatable="false">Rain</string>
+    <string name="AppNameBeta" translatable="false">Rain Beta</string>
     <string name="LanguageName">English</string>
     <string name="English">English</string>
     <string name="LanguageNameInEnglish">English</string>
@@ -1262,7 +1262,7 @@
     <string name="Emoji">Emoji</string>
     <string name="EmojiBigSize">Draw single big emoji</string>
     <string name="EmojiUseDefault">Use system default emoji</string>
-    <string name="TelegramVersion">Telegram for Android %1$s</string>
+    <string name="TelegramVersion" translatable="false">Rain for Android %1$s</string>
     <string name="DebugMenu">Debug Menu</string>
     <string name="DebugSendLogs">Send Logs</string>
     <string name="DebugClearLogs">Clear Logs</string>
@@ -2491,4 +2491,6 @@
     <string name="formatterDay12H">h:mm a</string>
     <string name="formatDateAtTime">%1$s at %2$s</string>
     <string name="formatDateScheduleDay">EEE MMM d</string>
+    <string name="RainSettings" translatable="false">Rain Experiments</string>
+    <string name="SendTypingUpdates" translatable="false">Send typing updates</string>
 </resources>
